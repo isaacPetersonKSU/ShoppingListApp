@@ -23,6 +23,21 @@ namespace ShoppingListApp
         public MainWindow()
         {
             InitializeComponent();
+
+            var data = new Data();
+
+
+            DataContext = data;
+
+
+            data.Add("poop");
+
+            data.Add("awefwef");
+        }
+
+        private void ItemAdder_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
